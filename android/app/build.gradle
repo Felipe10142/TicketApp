@@ -78,6 +78,10 @@ android {
     compileSdk rootProject.ext.compileSdkVersion
 
     namespace "com.ticketapp"
+    
+    kotlinOptions {
+        allWarningsAsErrors = false
+    }
     defaultConfig {
         applicationId "com.ticketapp"
         minSdkVersion rootProject.ext.minSdkVersion
